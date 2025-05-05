@@ -124,6 +124,3 @@ black .
 mypy .
 ```
 
-## Lisans
-
-MIT 
