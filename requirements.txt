@@ -1,0 +1,18 @@
+# API ve HTTP İstekleri
+requests==2.31.0
+riotwatcher==3.2.4
+
+# Veri İşleme ve Analiz
+pandas==2.2.0
+numpy==1.26.3
+
+# Veritabanı ve Veri Ambarı
+google-cloud-bigquery==3.17.1
+
+# Görselleştirme
+plotly==5.18.0
+dash==2.14.2
+dash-bootstrap-components==1.5.0
+
+# Yardımcı Araçlar
+python-dotenv==1.0.0

@@ -1,0 +1,35 @@
+1. Riot Games API’sinden Veri Çek
+✅ Riot Developer Portal'dan API anahtarı al.
+✅ Match-V5 ve Spectator-V4 endpoint’lerinden veri çek.
+✅ Websocket veya HTTP ile gerçek zamanlı veri çekmeyi test et.
+
+2. Ara İşlemci ile Filtrele ve Temizle
+✅ Apache Flink ile veri filtrele ve formatı düzenle.
+✅ Gerekli olmayan verileri ayıkla.
+✅ Yanlış formatlı verileri düzelt.
+
+3. Gerçek Zamanlı İşleme Yap
+✅ Spark Streaming veya Kafka Streams ile anlık analiz yap.
+✅ RSI ve Bollinger Bantlarını uygula.
+✅ SQL ile WINDOW FUNCTION ile karmaşık dönüşümler yap.
+
+4. Verileri BigQuery veya Snowflake’e Yükle
+✅ BigQuery veya Snowflake bağlantısını kur.
+✅ Yapıyı otomatik schema ile eşleştir.
+✅ Yüklemeleri periyodik ve tutarlı hale getir.
+
+5. Grafana veya Plotly Dash ile Görselleştir
+✅ Anlık güncellemeleri içeren interaktif dashboard oluştur.
+✅ Oyuncu performans grafikleri, şampiyon analizleri vb. hazırla.
+✅ Oyuncu sıralamalarını gösteren tablo yapısı hazırla.
+
+6. Kod Kalitesi ve Testler
+✅ Kodları modüler yapıya uygun tasarla.
+✅ pytest ile kapsamlı testler yaz (edge case’leri dahil et).
+✅ PEP 8 ve type hinting’e (PEP 484) uygun kodla.
+✅ pre-commit hook ile kod kalitesini kontrol et.
+
+7. CI/CD Pipeline ile Otomatik Deployment
+✅ GitHub Actions veya Jenkins ile pipeline kur.
+✅ Kod push edildiğinde testleri ve deployment’ı otomatikleştir.
+✅ Başarısız deployment durumunda rollback yap.

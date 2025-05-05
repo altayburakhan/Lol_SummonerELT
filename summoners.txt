@@ -1,0 +1,8 @@
+# Bu dosyaya izlemek istediğiniz oyuncuları ve bölgelerini ekleyin
+# Her satır bir oyuncu için: "OyuncuAdı,BölgeKodu"
+# Örnek:
+# Faker,kr
+# Jankos,euw1
+# Bjergsen,na1
+
+# Kendi oyuncularınızı aşağıya ekleyin 
