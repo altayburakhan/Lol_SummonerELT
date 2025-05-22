@@ -1,0 +1,180 @@
+{
+  "match_id": "TR1_1587340154",
+  "game_creation": 1737806475788,
+  "game_duration": 1609,
+  "game_mode": "SWIFTPLAY",
+  "game_type": "MATCHED_GAME",
+  "game_version": "15.2.652.1536",
+  "map_id": 11,
+  "queue_id": 480,
+  "platform_id": "TR1",
+  "season_id": 0,
+  "teams": [
+    {
+      "team_id": 100,
+      "win": true,
+      "objectives": {
+        "baron": 0,
+        "champion": 35,
+        "dragon": 2,
+        "inhibitor": 2,
+        "rift_herald": 0,
+        "tower": 8
+      }
+    },
+    {
+      "team_id": 200,
+      "win": false,
+      "objectives": {
+        "baron": 0,
+        "champion": 31,
+        "dragon": 0,
+        "inhibitor": 0,
+        "rift_herald": 0,
+        "tower": 2
+      }
+    }
+  ],
+  "participants": [
+    {
+      "participant_id": 1,
+      "team_id": 100,
+      "champion_id": 122,
+      "champion_name": "Darius",
+      "kills": 8,
+      "deaths": 7,
+      "assists": 1,
+      "gold_earned": 16984,
+      "total_damage_dealt": 21801,
+      "total_damage_taken": 31938,
+      "vision_score": 2,
+      "win": true
+    },
+    {
+      "participant_id": 2,
+      "team_id": 100,
+      "champion_id": 19,
+      "champion_name": "Warwick",
+      "kills": 10,
+      "deaths": 8,
+      "assists": 2,
+      "gold_earned": 12977,
+      "total_damage_dealt": 12542,
+      "total_damage_taken": 27279,
+      "vision_score": 1,
+      "win": true
+    },
+    {
+      "participant_id": 3,
+      "team_id": 100,
+      "champion_id": 800,
+      "champion_name": "Mel",
+      "kills": 8,
+      "deaths": 1,
+      "assists": 7,
+      "gold_earned": 15297,
+      "total_damage_dealt": 18678,
+      "total_damage_taken": 10399,
+      "vision_score": 10,
+      "win": true
+    },
+    {
+      "participant_id": 4,
+      "team_id": 100,
+      "champion_id": 21,
+      "champion_name": "MissFortune",
+      "kills": 2,
+      "deaths": 10,
+      "assists": 8,
+      "gold_earned": 12706,
+      "total_damage_dealt": 11464,
+      "total_damage_taken": 24107,
+      "vision_score": 11,
+      "win": true
+    },
+    {
+      "participant_id": 5,
+      "team_id": 100,
+      "champion_id": 99,
+      "champion_name": "Lux",
+      "kills": 7,
+      "deaths": 5,
+      "assists": 8,
+      "gold_earned": 14359,
+      "total_damage_dealt": 34815,
+      "total_damage_taken": 18612,
+      "vision_score": 2,
+      "win": true
+    },
+    {
+      "participant_id": 6,
+      "team_id": 200,
+      "champion_id": 157,
+      "champion_name": "Yasuo",
+      "kills": 3,
+      "deaths": 11,
+      "assists": 7,
+      "gold_earned": 13558,
+      "total_damage_dealt": 5523,
+      "total_damage_taken": 26630,
+      "vision_score": 2,
+      "win": false
+    },
+    {
+      "participant_id": 7,
+      "team_id": 200,
+      "champion_id": 35,
+      "champion_name": "Shaco",
+      "kills": 11,
+      "deaths": 5,
+      "assists": 6,
+      "gold_earned": 16357,
+      "total_damage_dealt": 22315,
+      "total_damage_taken": 26709,
+      "vision_score": 5,
+      "win": false
+    },
+    {
+      "participant_id": 8,
+      "team_id": 200,
+      "champion_id": 74,
+      "champion_name": "Heimerdinger",
+      "kills": 5,
+      "deaths": 6,
+      "assists": 7,
+      "gold_earned": 14424,
+      "total_damage_dealt": 25874,
+      "total_damage_taken": 26036,
+      "vision_score": 0,
+      "win": false
+    },
+    {
+      "participant_id": 9,
+      "team_id": 200,
+      "champion_id": 21,
+      "champion_name": "MissFortune",
+      "kills": 10,
+      "deaths": 6,
+      "assists": 6,
+      "gold_earned": 15821,
+      "total_damage_dealt": 26172,
+      "total_damage_taken": 21063,
+      "vision_score": 7,
+      "win": false
+    },
+    {
+      "participant_id": 10,
+      "team_id": 200,
+      "champion_id": 147,
+      "champion_name": "Seraphine",
+      "kills": 2,
+      "deaths": 7,
+      "assists": 6,
+      "gold_earned": 13250,
+      "total_damage_dealt": 9612,
+      "total_damage_taken": 20965,
+      "vision_score": 0,
+      "win": false
+    }
+  ]
+}

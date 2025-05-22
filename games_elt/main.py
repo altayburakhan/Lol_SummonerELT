@@ -11,27 +11,31 @@ from visualization.dashboard import Dashboard
 from live_game_collector import LiveGameCollector
 
 class LoLAnalytics:
-    def __init__(self):
+    def __init__(self, region: str = "TR1"):
         load_dotenv()
-        self.riot_client = RiotAPIClient()
+        self.riot_client = RiotAPIClient(region=region)
         self.data_processor = DataProcessor()
         self.db_client = BigQueryClient()
         self.dashboard = Dashboard()
         self.live_collector = LiveGameCollector()
     
-    def collect_match_data(self, summoner_name: str, num_matches: int = 10):
+    def collect_match_data(self, summoner_name: str, summoner_tag: str, num_matches: int = 10):
         """
         Collect and process match data for a summoner.
         
         Args:
             summoner_name (str): Name of the summoner
+            summoner_tag (str): Tag of the summoner
             num_matches (int): Number of matches to collect
         """
-        # Get summoner information
-        summoner = self.riot_client.get_summoner_by_name(summoner_name)
+        # Get account information
+        account = self.riot_client.get_account_by_riot_id(summoner_name, summoner_tag)
+        if not account:
+            print(f"Could not find account for {summoner_name}#{summoner_tag}")
+            return
         
         # Get match history
-        match_ids = self.riot_client.get_match_history(summoner['puuid'], count=num_matches)
+        match_ids = self.riot_client.get_match_history(account['puuid'], count=num_matches)
         
         # Process each match
         for match_id in match_ids:
@@ -86,6 +90,7 @@ def main():
     # Collection command
     collection_parser = subparsers.add_parser('collect', help='Collect match data')
     collection_parser.add_argument('--summoner', '-s', type=str, required=True, help='Summoner name')
+    collection_parser.add_argument('--tag', '-t', type=str, required=True, help='Summoner tag')
     collection_parser.add_argument('--matches', '-m', type=int, default=10, help='Number of matches to collect')
     
     # Dashboard command
@@ -101,11 +106,11 @@ def main():
     args = parser.parse_args()
     
     # Initialize the application
-    app = LoLAnalytics()
+    app = LoLAnalytics(region=args.region)
     
     # Process commands
     if args.command == 'collect':
-        app.collect_match_data(args.summoner, args.matches)
+        app.collect_match_data(args.summoner, args.tag, args.matches)
     elif args.command == 'dashboard':
         app.run_dashboard(debug=args.debug, port=args.port)
     elif args.command == 'live':
@@ -113,7 +118,8 @@ def main():
     else:
         # Default behavior - collect some data and run dashboard
         summoner_name = os.getenv('SUMMONER_NAME', 'default_summoner')
-        app.collect_match_data(summoner_name)
+        summoner_tag = os.getenv('SUMMONER_TAG', 'default_tag')
+        app.collect_match_data(summoner_name, summoner_tag)
         app.run_dashboard()
 
 if __name__ == "__main__":
